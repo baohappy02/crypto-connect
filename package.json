@@ -1,0 +1,54 @@
+{
+  "name": "crypto-connect",
+  "description": "Authentication integration for Vue 3",
+  "author": "baohappy02@gmail.com",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "./dist/solana-wallets-vue.umd.js",
+  "module": "./dist/solana-wallets-vue.mjs",
+  "typings": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/solana-wallets-vue.mjs",
+      "require": "./dist/solana-wallets-vue.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "build-only": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@solana-mobile/wallet-adapter-mobile": "^2.1.4",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-standard-wallet-adapter-base": "^1.1.4",
+    "@vueuse/core": "^12.5.0",
+    "@wallet-standard/app": "^1.1.0",
+    "@wallet-standard/base": "^1.1.0"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^1.61.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/wallet-adapter-wallets": "^0.19.32",
+    "@solana/web3.js": "^1.98.0",
+    "@types/node-fetch": "^2.6.12",
+    "vue": "^3.5.13",
+    "@types/node": "^22.13.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.5.0",
+    "vue-tsc": "^2.2.0"
+  }
+}
