@@ -1,6 +1,5 @@
 import type { Adapter } from "@solana/wallet-adapter-base";
 import { WalletNotReadyError } from "@solana/wallet-adapter-base";
-import type { Cluster } from "@solana/web3.js";
 import type { Ref } from "vue";
 import { ref, shallowRef } from "vue";
 import {
@@ -19,6 +18,7 @@ import {
 } from "./composables";
 import { WalletNotSelectedError } from "./errors";
 import type { WalletStore, WalletStoreProps } from "./types";
+import type { Cluster } from "@/types/web3";
 
 export const createWalletStore = ({
   wallets: initialAdapters = [],

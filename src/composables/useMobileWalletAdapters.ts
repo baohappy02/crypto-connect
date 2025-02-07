@@ -1,3 +1,4 @@
+import type { Cluster } from "@/types/web3";
 import {
   createDefaultAddressSelector,
   createDefaultAuthorizationResultCache,
@@ -6,7 +7,6 @@ import {
   SolanaMobileWalletAdapterWalletName,
 } from "@solana-mobile/wallet-adapter-mobile";
 import type { Adapter } from "@solana/wallet-adapter-base";
-import type { Cluster } from "@solana/web3.js";
 import { computed } from "vue";
 import type { Ref } from "vue";
 
