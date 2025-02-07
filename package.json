@@ -2,22 +2,26 @@
   "name": "crypto-connect",
   "description": "Authentication integration for Vue 3",
   "author": "baohappy02@gmail.com",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "license": "MIT",
   "files": [
     "dist",
-    "src"
+    "src",
+    "styles.css",
+    "postcss.config.js"
   ],
-  "main": "./dist/solana-wallets-vue.umd.js",
-  "module": "./dist/solana-wallets-vue.mjs",
+  "main": "./dist/crypto-connect.umd.js",
+  "module": "./dist/crypto-connect.mjs",
   "typings": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/solana-wallets-vue.mjs",
-      "require": "./dist/solana-wallets-vue.umd.js",
+      "import": "./dist/crypto-connect.mjs",
+      "require": "./dist/crypto-connect.umd.js",
       "types": "./dist/index.d.ts"
-    }
+    },
+    "./styles.css": "./styles.css",
+    "./postcss.config.js": "./postcss.config.js"
   },
   "scripts": {
     "dev": "vite",

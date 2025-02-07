@@ -92,7 +92,7 @@ export default defineComponent({
           class="swv-button swv-button-trigger"
           @click="modalScope.openModal"
         >
-          Select Wallet
+          Don't Select Wallet 
         </button>
         <wallet-connect-button
           v-else-if="!publicKeyBase58"
